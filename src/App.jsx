@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { AnimeCard } from "./AnimeCard.jsx"
-import { Header } from "./Header.jsx"
+import { AnimeCard } from "./components/AnimeCard.jsx"
+import { useAnimeData } from './hooks/useAnimeData.jsx'
 
 function App() {
+  const { animeData, refreshAnimeData } = useAnimeData()
+
+  const handleClick = async () => {
+    console.log("clikite")
+    refreshAnimeData()
+  }
+
   return (
     <>
-    <div className="flex flex-col">
-      <Header />
-      <section className="flex flex-row gap-4">
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-      </section>
-    </div>
+      <h1>Anime Random</h1>
+      <AnimeCard />
+      <button onClick={handleClick}>Next</button>
     </>
   )
 }
