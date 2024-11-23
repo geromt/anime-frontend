@@ -8,11 +8,12 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'dark-purple': '#331832',
-      'raspberry': '#D81E5B',
-      'glaucous': '#7180AC',
-      'ash-gray': '#c6d8d3',
-      'gamboge': '#ec9a29',
+      'background-color': "var(--background-color)",
+      'primary': "var(--primary-color)",
+      'secondary': "var(--secondary-color)",
+    },
+    fontFamily: {
+      holtwood: ["Holtwood One SC", "serif"],
     },
   },
   plugins: [],
