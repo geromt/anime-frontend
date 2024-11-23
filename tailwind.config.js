@@ -14,6 +14,7 @@ export default {
     },
     fontFamily: {
       holtwood: ["Holtwood One SC", "serif"],
+      kantumruy: ["Kantumruy Pro", "sans-serif"],
     },
   },
   plugins: [],

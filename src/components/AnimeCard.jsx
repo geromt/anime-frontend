@@ -4,15 +4,16 @@ import { useAnimeData } from "../hooks/useAnimeData";
 export function AnimeCard({animeData}) {
 
   return (
-    <div>
-      <p>{animeData.title}</p>
-      <img src={animeData.imageUrl} alt={`Image of ${animeData.title}`} />
-      <div>
-        <p>Score: {animeData.score ?? "N/A"}</p>
-        <p>Status: {animeData.status ?? "N/A"}</p>
-        <p>Rating: {animeData.rating ?? "N/A"}</p>
-        <p>Season: {animeData.season ?? "N/A"}</p>
-        <p>Year: {animeData.year ?? "N/A"}</p>
+    <div className="border-2 border-primary rounded-md mx-28 my-4 p-4 px-12 grid grid-cols-2 gap-4
+    content-center justify-center justify-items-center">
+      <p className="font-holtwood text-primary text-4xl text-center">{animeData.title}</p>
+      <img className="w-[400px] h-[400px] row-span-2 object-fill drop-shadow-xl shadow-primary" src={animeData.imageUrl} alt={`Image of ${animeData.title}`} />
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-primary text-3xl font-kantumruy">Score: {animeData.score ?? "N/A"}</p>
+        <p className="text-primary text-3xl font-kantumruy">Status: {animeData.status ?? "N/A"}</p>
+        <p className="text-primary text-3xl font-kantumruy">Rating: {animeData.rating ?? "N/A"}</p>
+        <p className="text-primary text-3xl font-kantumruy">Season: {animeData.season ?? "N/A"}</p>
+        <p className="text-primary text-3xl font-kantumruy">Year: {animeData.year ?? "N/A"}</p>
       </div>
     </div>
   )

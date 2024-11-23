@@ -6,7 +6,7 @@ export async function getAnimeInfo()
     const data = await response.json();
     const animeData = {
         title: data.data.title,
-        imageUrl: data.data.images.jpg.image_url,
+        imageUrl: data.data.images.jpg.large_image_url,
         score: data.data.score,
         status: data.data.status,
         rating: data.data.rating,
