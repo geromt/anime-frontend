@@ -13,7 +13,7 @@ export function useAnimeData () {
   })
 
   const refreshAnimeData = () => {
-    getAnimeInfo().then(animeData => setAnimeData(animeData))
+    getAnimeInfo().then(data => setAnimeData(data))
   }
 
   useEffect(refreshAnimeData, [])

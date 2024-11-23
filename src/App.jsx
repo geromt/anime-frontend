@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <h1>Anime Random</h1>
-      <AnimeCard />
+      <AnimeCard animeData={animeData}/>
       <button onClick={handleClick}>Next</button>
     </>
   )

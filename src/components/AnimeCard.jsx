@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAnimeData } from "../hooks/useAnimeData";
 
-export function AnimeCard() {
-  const [ animeData2, setAnimeData ] = useState();
-  const { animeData, _ } = useAnimeData();
-
-  useEffect(() => {console.log("helds")}, [animeData])
+export function AnimeCard({animeData}) {
 
   return (
     <div>
