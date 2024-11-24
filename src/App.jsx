@@ -12,7 +12,12 @@ function App() {
 
   return (
     <>
-      <h1 className="font-holtwood text-primary text-7xl ml-28 pt-16">Anime Random</h1>
+      <h1 className="font-holtwood text-primary 
+      2xl:text-8xl xl:text-7xl lg:text-6xl md:text-6xl sm:text-5xl text-4xl 
+      text-center lg:text-left 
+      md:ml-28 md:pt-16 pt-8">
+        Anime Random
+      </h1>
       <AnimeCard animeData={animeData}/>
       <span className="flex justify-center">
         <button onClick={handleClick} className="
